@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0l
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styling */
+header {
+    padding: 20px 35px;
+    background: none !important;
+    position: sticky;
+}
+
+/* Header Text */
+header h1 {
+font-weight: bold;
+font-size: 36px;
+color: aqua;
+margin: 0;
+display: inline;
+padding: 0;
+}
+/* Links */
+header a {
+text-decoration: none;
+}
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+    color: rbg(133,30,177);
+    text-decoration: und;
+}
+
+/* Hero */
+.hero {
+    background-image: url("../unnamed.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* About me start */
+
+.about-me-section {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    padding: 70px 0;
+    border: 20px;
+    border: black;
+    ;
+}
+.about-me {
+    font-size: 80px;
+    flex: 1;
+    padding: 50px;
+    margin: 10px;
+    border-right: 5px solid black;
+}
+.about-me-content {
+    flex: 50%;
+    font-size: 30px;
+}
+/* Work Start */
+.work-section {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    padding: 70px 0;
+    border: 20px;
+    border: black;
+}
+.work-title {
+    font-size: 80px;
+    flex: 1;
+    padding: 50px;
+    margin: 10px;
+    border-right: 5px solid black;
+}
+.work-content {
+    flex: 50%;
+    font-size: 30px;
+}
+/* contact me section */
+.contact-section {
+    display: flex;
+    width: 50%;
+    text-align: center;
+    padding: 70px 0;
+    border: 20px;
+    border: black;
+}
+.contact-me {
+    font-size: 65px;
+    flex: 1;
+    padding: 50px;
+    margin: 10px;
+    border-right: 5px solid black;
+}
+.contacts {
+    flex: 50%;
+    font-size: 30px;
+}
