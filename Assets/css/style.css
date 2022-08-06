@@ -1,35 +1,45 @@
 * {
     margin: 0;
-    padding: 0l
+    padding: 0l;
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: rgb(133, 30, 177);
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Header Styling */
 header {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px 35px;
-    background: none !important;
+    justify-content: space-between;
+    position: -webkit-sticky;
     position: sticky;
+    top: 0;
+    background-image: url(../hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 70%;
+    z-index: 9999;
 }
-
 /* Header Text */
 header h1 {
 font-weight: bold;
 font-size: 36px;
-color: aqua;
 margin: 0;
-display: inline;
 padding: 0;
 }
+
 /* Links */
 header a {
 text-decoration: none;
 }
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
@@ -47,14 +57,28 @@ header nav ul li a {
     color: rbg(133,30,177);
     text-decoration: und;
 }
+header nav ul li a:hover {
+    background:rgb(133, 30, 177);
+    color: gray;
+}
 
 /* Hero */
 .hero {
-    background-image: url("../unnamed.jpg");
-    height: 600px;
+    background-image: url("../hero.jpg");
     background-size: cover;
-    background-position: center;
-    position: relative;
+    display: flex;
+    height: 900px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+.subtitle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
 }
 
 /* About me start */
@@ -66,7 +90,6 @@ header nav ul li a {
     padding: 70px 0;
     border: 20px;
     border: black;
-    ;
 }
 .about-me {
     font-size: 80px;
@@ -88,16 +111,20 @@ header nav ul li a {
     border: 20px;
     border: black;
 }
-.work-title {
+.work {
     font-size: 80px;
     flex: 1;
-    padding: 50px;
+    padding: 60px;
     margin: 10px;
     border-right: 5px solid black;
+    text-align: center;
 }
 .work-content {
     flex: 50%;
     font-size: 30px;
+}
+.run-buddy {
+    right: 0;
 }
 /* contact me section */
 .contact-section {
