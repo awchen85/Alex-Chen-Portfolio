@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0l;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -9,6 +9,9 @@
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--main-color);
+    background-color: darkgrey;
+    border: 1px solid transparent;
 }
 
 /* Header Styling */
@@ -45,7 +48,7 @@ header nav {
 
 header nav ul {
     display: flex;
-    flex-wrap: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
@@ -65,9 +68,10 @@ header nav ul li a:hover {
 /* Hero */
 .hero {
     background-image: url("../hero.jpg");
-    background-size: cover;
-    display: flex;
     height: 900px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -75,74 +79,151 @@ header nav ul li a:hover {
     background-position: 80%;
 }
 .subtitle {
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
     color: white;
+    z-index: 2;
 }
-
+/* Content start */
+.section {
+    margin: 50px auto;
+}
+.left {
+    float: left;
+    width: 33.33%;
+}
+.right {
+    padding: 50px;
+}
+.right:after {
+    content:"";
+    display: table;
+    clear: both;
+}
 /* About me start */
 
 .about-me-section {
+    width: 40%;
     display: flex;
-    width: 50%;
-    text-align: center;
-    padding: 70px 0;
-    border: 20px;
-    border: black;
+    align-items: left;
 }
 .about-me {
     font-size: 80px;
-    flex: 1;
-    padding: 50px;
     margin: 10px;
     border-right: 5px solid black;
+    display: inline-block;
+    text-align: center;
 }
 .about-me-content {
-    flex: 50%;
     font-size: 30px;
+    display: block;
+    align-items: right;
 }
 /* Work Start */
 .work-section {
-    display: flex;
-    width: 50%;
-    text-align: center;
-    padding: 70px 0;
-    border: 20px;
-    border: black;
+    padding-top: 50px;
+    width: 40%;
+    align-items: left;
 }
 .work {
     font-size: 80px;
-    flex: 1;
-    padding: 60px;
     margin: 10px;
     border-right: 5px solid black;
     text-align: center;
+    display: inline-block;
+    width: 282.22px;
 }
 .work-content {
-    flex: 50%;
+    display: inline-grid;
+    column-gap: 50px;
     font-size: 30px;
+    display: grid;
+    flex-wrap: wrap;
+    width: 800px;
+
 }
-.run-buddy {
-    right: 0;
+.run-buddy img {
+    width: auto;
+
 }
+img {
+    height: 100%;
+    width: auto;
+    object-fit: fill;
+}
+.food {
+    max-width: 800px;
+    max-height: 330px;
+    border: 1px solid blue;
+    padding: 0 0 0 0 ;
+}
+.controller {
+    max-width: 800px;
+    max-height: 330px;
+    border: 1px solid blue;
+    padding: 0 0 0 0 ;
+}
+
 /* contact me section */
 .contact-section {
+    width: 80%;
     display: flex;
-    width: 50%;
-    text-align: center;
-    padding: 70px 0;
-    border: 20px;
-    border: black;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 .contact-me {
     font-size: 65px;
-    flex: 1;
-    padding: 50px;
     margin: 10px;
     border-right: 5px solid black;
 }
 .contacts {
     flex: 50%;
     font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY FOR SMALL DESKTOPS */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    section {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    footer {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 760px) {
+.hero {
+    width: 100%;
+    position: absolute;
 }
