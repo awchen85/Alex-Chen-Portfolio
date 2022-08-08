@@ -6,6 +6,7 @@
 
 :root {
     --main-color: rgb(133, 30, 177);
+    --second-color: teal;
 }
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -69,14 +70,11 @@ header nav ul li a:hover {
 .hero {
     background-image: url("../hero.jpg");
     height: 900px;
+    max-width: 2297;
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
 }
 .subtitle {
     position: relative;
@@ -88,6 +86,7 @@ header nav ul li a:hover {
 /* Content start */
 .section {
     margin: 50px auto;
+    display: wrap;
 }
 .left {
     float: left;
@@ -95,6 +94,7 @@ header nav ul li a:hover {
 }
 .right {
     padding: 50px;
+    flex: wrap;
 }
 .right:after {
     content:"";
@@ -112,12 +112,12 @@ header nav ul li a:hover {
     font-size: 80px;
     margin: 10px;
     border-right: 5px solid black;
-    display: inline-block;
+    display: flex;
     text-align: center;
 }
 .about-me-content {
     font-size: 30px;
-    display: block;
+    display: flex;
     align-items: right;
 }
 /* Work Start */
@@ -131,38 +131,38 @@ header nav ul li a:hover {
     margin: 10px;
     border-right: 5px solid black;
     text-align: center;
-    display: inline-block;
+    display: flex;
     width: 282.22px;
 }
 .work-content {
-    display: inline-grid;
-    column-gap: 50px;
     font-size: 30px;
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
-    width: 800px;
 
 }
 .run-buddy img {
-    width: auto;
+    text-align: center;
+    border: 5px solid teal;
+    display: inline-block;
+    flex: 1 0 33%;
+}
 
-}
-img {
-    height: 100%;
-    width: auto;
-    object-fit: fill;
-}
-.food {
-    max-width: 800px;
-    max-height: 330px;
-    border: 1px solid blue;
+.row-1 img {
+    height: 150px;
+    width: 300px;
+    border: 5px solid teal;
     padding: 0 0 0 0 ;
-}
-.controller {
-    max-width: 800px;
-    max-height: 330px;
-    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 33%;}
+
+.row-2 img {
+    height: 150px;
+    width: 300px;
+    border: 5px solid teal;
     padding: 0 0 0 0 ;
+    display: inline-block;
+    flex: 1 0 33%;
 }
 
 /* contact me section */
@@ -172,6 +172,7 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    max-width: auto;
 }
 .contact-me {
     font-size: 65px;
@@ -223,7 +224,3 @@ img {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 760px) {
-.hero {
-    width: 100%;
-    position: absolute;
-}
