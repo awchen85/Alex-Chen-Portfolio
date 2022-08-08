@@ -78,6 +78,7 @@ header nav ul li a:hover {
 }
 .subtitle {
     position: relative;
+    text-align: center;
     bottom: 0;
     right: 0;
     color: white;
@@ -136,15 +137,16 @@ header nav ul li a:hover {
 }
 .work-content {
     font-size: 30px;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
+    
 
 }
 .run-buddy img {
     text-align: center;
     border: 5px solid teal;
-    display: inline-block;
-    flex: 1 0 33%;
+    height: 300px;
+    width: 500px;
 }
 
 .row-1 img {
@@ -152,16 +154,16 @@ header nav ul li a:hover {
     width: 300px;
     border: 5px solid teal;
     padding: 0 0 0 0 ;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 33%;}
+    justify-content: space-between;
+    flex: 1 0 33%;
+}
 
 .row-2 img {
     height: 150px;
     width: 300px;
     border: 5px solid teal;
     padding: 0 0 0 0 ;
-    display: inline-block;
+    justify-content: space-between;
     flex: 1 0 33%;
 }
 
@@ -223,4 +225,4 @@ header nav ul li a:hover {
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 760px)
