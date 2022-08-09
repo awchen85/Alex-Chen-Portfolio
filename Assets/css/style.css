@@ -73,11 +73,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
 }
-.subtitle {
-    color: white;
-    z-index: 2;
-    text-align: center;
-}
+
 /* Content start */
 .section {
     margin-top: 60px;
@@ -116,9 +112,11 @@ header nav ul li a:hover {
     border: 5px solid teal;
     display: flex;
     flex-wrap: wrap;
-  
+    margin: 0 auto;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
 }
-
 .img {
     height: 150px;
     width: 300px;
@@ -133,6 +131,8 @@ header nav ul li a:hover {
     border: 5px solid teal;
     flex: 100%;
     margin: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .row-2 img {
     height: 150px;
@@ -141,6 +141,8 @@ header nav ul li a:hover {
     padding: 0 0 0 0 ;
     flex: 100%;
     margin: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 /* contact me section */
@@ -148,10 +150,13 @@ header nav ul li a:hover {
     width: 80%;
     align-items: center;
     max-width: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .contacts {
     flex: 50%;
     font-size: 30px;
+    text-align: right;
 }
 
 
@@ -181,17 +186,10 @@ header nav ul li a:hover {
     header nav ul li a {
         font-size: 20px;
     }
-    section {
-        width: 100%;
-        justify-content: center;
-    }
-    
+
     footer {
         text-align: center;
         width: 100%;
     }
   
 }
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 760px)
