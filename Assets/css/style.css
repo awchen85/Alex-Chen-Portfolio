@@ -112,10 +112,8 @@ header nav ul li a:hover {
     text-align: center;
 
 }
-#run-buddy img {
-    vertical-align: middle;
+#run-buddy img {    
     border: 5px solid teal;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
   
@@ -134,6 +132,7 @@ header nav ul li a:hover {
     width: 300px;
     border: 5px solid teal;
     flex: 100%;
+    margin: 50px;
 }
 .row-2 img {
     height: 150px;
@@ -141,6 +140,7 @@ header nav ul li a:hover {
     border: 5px solid teal;
     padding: 0 0 0 0 ;
     flex: 100%;
+    margin: 50px;
 }
 
 /* contact me section */
@@ -190,9 +190,7 @@ header nav ul li a:hover {
         text-align: center;
         width: 100%;
     }
-    right {
-        border-left: vanish;
-    }
+  
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
