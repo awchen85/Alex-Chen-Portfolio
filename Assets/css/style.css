@@ -24,11 +24,11 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url(../hero.jpg);
+    background-image: url(../profile.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 100%;
     z-index: 9999;
 }
 /* Header Text */
@@ -66,8 +66,8 @@ header nav ul li a:hover {
 
 /* Hero */
 .hero {
-    background-image: url("../hero.jpg");
-    height: 800px;
+    background-image: url("../profile.jpg");
+    height: 900px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -88,7 +88,7 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 .about-me {
-    font-size: 30px;
+    font-size: 20px;
     display: flex;
     flex-wrap: flex;
 }
